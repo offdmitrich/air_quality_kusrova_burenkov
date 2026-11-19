@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Вхід до системи</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 16px;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      width: 100%;
+      max-width: 320px;
+    }
+
+    header, h2 {
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-size: 20px;
+      margin: 0 0 12px;
+    }
+
+    section {
+      border: 1px solid;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 8px;
+      font: inherit;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Курсова робота</h1>
+    <p>Буренков Ілля · ІПЗ - 22006</p>
+  </header>
+
+  <section aria-labelledby="login-heading">
+    <h2 id="login-heading">Вхід до системи</h2>
+
+    <form action="/login" method="post">
+      <p>
+        <label for="username">Логін</label>
+        <input id="username" name="username" autocomplete="username" required>
+      </p>
+
+      <p>
+        <label for="password">Пароль</label>
+        <input id="password" name="password" type="password"
+               autocomplete="current-password" required>
+      </p>
+
+      <button type="submit">Увійти</button>
+    </form>
+  </section>
+</main>
+</body>
+</html>
